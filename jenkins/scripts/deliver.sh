@@ -27,5 +27,5 @@ java -jar target/${NAME}-${VERSION}.jar
 
 echo "BUILD_NUMBER" :: $BUILD_NUMBER
 
-#docker build -t jaydeepuniverse/simple_java_maven_pipeline_docker:1.0 .
-#docker run jaydeepuniverse/simple_java_maven_pipeline_docker:1.0
+docker build -t jaydeepuniverse/simple_java_maven_pipeline_docker:$BUILD_NUMBER .
+docker run jaydeepuniverse/simple_java_maven_pipeline_docker:1.0
