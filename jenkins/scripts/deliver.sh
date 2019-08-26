@@ -28,4 +28,4 @@ java -jar target/${NAME}-${VERSION}.jar
 echo "BUILD_NUMBER" :: $BUILD_NUMBER
 
 sudo docker build -t jaydeepuniverse/simple_java_maven_pipeline_docker:$BUILD_NUMBER .
-sudo docker run jaydeepuniverse/simple_java_maven_pipeline_docker:1.0
+sudo docker run jaydeepuniverse/simple_java_maven_pipeline_docker:$BUILD_NUMBER
